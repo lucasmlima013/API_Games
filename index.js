@@ -5,6 +5,7 @@ const bodyParser = require*("body-parser");
 app.use(bodyParser.urlencodes({extended: false}));
 app.use(bodyParser.json());
 
+
 var DB = {
     games: [
         {
@@ -28,3 +29,8 @@ var DB = {
         
     ]
 }
+
+
+app.listen(4080,() => {
+    console.log("Api Rodando!");
+});
