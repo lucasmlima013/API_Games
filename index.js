@@ -31,6 +31,10 @@ var DB = {
 }
 
 
+app.get("/",() => {
+
+});
+
 app.listen(4080,() => {
     console.log("Api Rodando!");
 });
