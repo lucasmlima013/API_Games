@@ -36,6 +36,16 @@ app.get("/games",(req, res) => {
     res.json(DB.games);
 });
 
+app.get("/games/:id", (req, res) => {
+
+    if(isNaN(req.params.id)){
+        res.send("Isso não é um número");
+    }else{
+             res.send("Isso é um número");
+        }
+
+});
+
 app.listen(4080,() => {
     console.log("Api Rodando!");
 });
