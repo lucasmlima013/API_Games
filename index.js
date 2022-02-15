@@ -39,9 +39,18 @@ app.get("/games",(req, res) => {
 app.get("/games/:id", (req, res) => {
 
     if(isNaN(req.params.id)){
-        res.send("Isso não é um número");
+        res.sendStatus(400);
     }else{
-             res.send("Isso é um número");
+            var id = parseInt(req.params.id);
+
+            var game = DB.games.find(g => g.id == id);
+
+            if(game != undefined){
+                res.statusCode =  200;
+                res.json(game);
+            }else{
+                res.sendStatus(404);
+            }
         }
 
 });
