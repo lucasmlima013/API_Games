@@ -25,6 +25,12 @@ var DB = {
             title: "Minecraft",
             year: 2015,
             price: 50
+        },
+        {
+            id : 10,
+            title: "Fifa",
+            year: 2022,
+            price: 120
         }
         
     ]
