@@ -48,6 +48,12 @@ var DB = {
             title: "Mortal Kombat",
             year: 2019,
             price: 200
+        }, 
+        {
+            id : 90,
+            title: "Mortal Kombat",
+            year: 2019,
+            price: 200
         }
         
     ]
