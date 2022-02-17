@@ -5,7 +5,6 @@ const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
-
 var DB = {
     games: [
         {
@@ -42,6 +41,12 @@ var DB = {
             id : 60,
             title: "Destiny",
             year: 2021,
+            price: 200
+        }, 
+        {
+            id : 60,
+            title: "Mortal Kombat",
+            year: 2019,
             price: 200
         }
         
