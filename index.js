@@ -37,6 +37,12 @@ var DB = {
             title: "Pes 2021",
             year: 2021,
             price: 80
+        },
+        {
+            id : 60,
+            title: "Destiny",
+            year: 2021,
+            price: 200
         }
         
     ]
